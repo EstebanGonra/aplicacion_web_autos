@@ -2,6 +2,7 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 cars = pd.read_csv(r'\Users\esteb\aplicacion_web_autos\vehicles_us.csv')
+st.file_uploader(r'\Users\esteb\aplicacion_web_autos\vehicles_us.csv')
 st.header('Análisis de vehículos y sus características')
 st.write('La presente es una aplicación interactiva en la que se puede seleccionar diferentes características y así obtener gráficos representativos')
 st.write('Los datos consignados fueron extraídos de la base de datos vehícles_us.csv')
